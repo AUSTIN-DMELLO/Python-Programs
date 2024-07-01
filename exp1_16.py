@@ -1,0 +1,10 @@
+Cars=['bmw','toyota','audi','maruti']
+print(Cars)
+Cars.sort()
+print("Permanently sorted order: ",Cars)
+Cars.sort(reverse=True)
+print("Reversed order: ",Cars)
+temp_sorted_cars=sorted(Cars)
+print("Temporarily sorted list: ",Cars)
+Cars.reverse()
+print("Reversed temporary sort:",temp_sorted_cars)

@@ -1,0 +1,7 @@
+print("Welcome to the Letter Counter App\n")
+name=input("What is your name: ")
+print("Hello "+name+"!\nI will count the number of times that a specific letter occurs in a message.")
+msg=input("Please enter a message: ")
+ltr=input("Which letter would you like to count the occurances of: ")
+count=sum(1 for char in msg.lower() if char in (ltr.lower(),ltr.upper()))
+print(name+", Your message has",count,ltr+" in it.")
